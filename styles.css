@@ -1,0 +1,109 @@
+/* خلفية الصفحة */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #87CEEB, #1670ca);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* الصندوق الرئيسي */
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* عنوان الصفحة */
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* مربع البحث */
+.search-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+
+.search-box button {
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #E6C200;
+}
+
+/* تقرير الطقس */
+.weather-report {
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    margin-top: 10px;
+    display: none;
+    transition: 0.5s;
+}
+
+/* أيقونة الطقس */
+.weather-report img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+/* تصغير الحجم للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    /* تصميم الفوتر (حقوق الملكية) */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+
+}
